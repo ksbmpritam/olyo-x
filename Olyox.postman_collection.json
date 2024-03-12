@@ -1,0 +1,5264 @@
+{
+	"info": {
+		"_postman_id": "8723af33-1614-4ea5-8cf0-ddcc52a06eca",
+		"name": "Olyox",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33201962"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Banner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/banner",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"banner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "eddgewtydfweewhdiefhuydhas",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "2w78213t32632gedwedew",
+									"type": "text"
+								},
+								{
+									"key": "login_by",
+									"value": "manual",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "Abhishek Kumar",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Bind",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ksbmabhishek@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "7388505981",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/signup",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "device_id",
+									"value": "ererrrerrere",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "eweedederferferf",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ksbmabhishek@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/oauth/token",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/logout",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change/password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "7|MHVBZFAT0NdqSFhhAsH2It1RnW1ax5O9rtgjWs5i",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "old_password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/change/password",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"change",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promocodes_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/promocodes_list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"promocodes_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/settings",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check Email verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "kabmabhishek@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/verify",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/checkemail",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ksbmabhishek@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/checkemail",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"checkemail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkapi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/checkapi",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"checkapi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkversion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "version",
+									"value": "3.4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/checkversion",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"checkversion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "direction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/direction",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"direction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "latitude",
+									"value": "321",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "1212",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/update/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"update",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/language",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/update/language",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"update",
+								"language"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language",
+									"value": "en",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/details",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/profile",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Abhishek",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/update/profile",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"update",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "callid",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/update/details",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"update",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/services",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rate/provider",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/rate/provider",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"rate",
+								"provider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send/request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "s_latitude",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "s_longitude",
+									"value": "32222",
+									"type": "text"
+								},
+								{
+									"key": "service_type",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "payment_mode",
+									"value": "CASH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/send/request",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"send",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request/start",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/request/start",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"request",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel/request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/cancel/request",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"cancel",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request/check",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|gjROyukkyhtnpCO9XwZCqVjn2g1CWSna5X7sZhBY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/request/check",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"request",
+								"check"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show/providers?latitude=12&longitude=123",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/show/providers?latitude=12&longitude=123",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"show",
+								"providers"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "12"
+								},
+								{
+									"key": "longitude",
+									"value": "123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/update/request",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"update",
+								"request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add/location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "21",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "sdcdc",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/add/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"add",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit/location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "542",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "3243",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "wededscd",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/edit/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"edit",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/delete/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "trips",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/trips",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upcoming/trips",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/upcoming/trips",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"upcoming",
+								"trips"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "trip/details?request_id=1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/trip/details?request_id=1",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"trip",
+								"details"
+							],
+							"query": [
+								{
+									"key": "request_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upcoming/trip/details?request_id=1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/upcoming/trip/details?request_id=1",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"upcoming",
+								"trip",
+								"details"
+							],
+							"query": [
+								{
+									"key": "request_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "extend/trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/extend/trip",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"extend",
+								"trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/payment",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/payment1",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"payment1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addmoney",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/addmoney",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"addmoney"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment/response",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/payment/response",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"payment",
+								"response"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment/failure",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/payment/failure",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"payment",
+								"failure"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "help",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/help",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"help"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promocodes_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "promocodes_list",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/promocodes_list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"promocodes_list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promocodes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|MUBNHa0UkQuIU8fsulLYnFhAftiSkUdjV2W8hgSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/promocodes",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"promocodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promocode/add",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|MUBNHa0UkQuIU8fsulLYnFhAftiSkUdjV2W8hgSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "promocode",
+									"value": "promo_code",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/promocode/add",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"promocode",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "card",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/card",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "card/create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/card",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "location",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wallet/passbook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/wallet/passbook",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"wallet",
+								"passbook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "promo/passbook",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/promo/passbook",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"promo",
+								"passbook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test/push",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/test/push",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"test",
+								"push"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/chat",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "ewdewdewd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/chat",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"chat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reasons",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/reasons",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"reasons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "notifications/{type}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/notifications/{{type}}?type=notification",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"notifications",
+								"{{type}}"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "notification"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dispute-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dispute_type",
+									"value": "user",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/dispute-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"dispute-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dispute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "dispute_type",
+									"value": "user",
+									"type": "text"
+								},
+								{
+									"key": "dispute_name",
+									"value": "check",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/dispute",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"dispute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drop-item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "4|0QnYUBGhV9wJ0F0GCWyC4kJ0TlRN7NLms5uafrZy",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "lost_item_name",
+									"value": "dfdfd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/drop-item",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"drop-item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Card Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "9|MUBNHa0UkQuIU8fsulLYnFhAftiSkUdjV2W8hgSQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "stripe_token",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/card",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"card"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/category-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/category-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"category-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/subcategory-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/subcategory-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"subcategory-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/business-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/business-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"business-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/create/business/review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "business_id",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sddddddd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/create/business/review",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"create",
+								"business",
+								"review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/driver-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/driver-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"driver-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/booking-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/booking-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"booking-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/booking-create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "transaction_id",
+									"value": "233",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "02/27/2024",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/booking-create",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"booking-create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/product-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/product-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"product-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/product-rating-create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sdaadds",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/product-rating-create",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"product-rating-create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/user/ticket-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/ticket-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"ticket-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user/ticket-create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "12|3gZHMzzkjkUEiV2FMQuZb5ODVUNTTQWMuGAjXRyT",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "question",
+									"value": "hey are you here?",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "2-feb-2024",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/user/ticket-create",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"user",
+								"ticket-create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Provider",
+			"item": [
+				{
+					"name": "settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/settings",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"settings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "device_id",
+									"value": "wddedweed32121x",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "fdcfdarefy4t7esbhbxeyftg437gdbc",
+									"type": "text"
+								},
+								{
+									"key": "first_name",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "country_code",
+									"value": "+91",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "7388505981",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "kumar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/register",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "device_id",
+									"value": "we3e232",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "android",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "wdewdewdewdewew",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abc@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/oauth/token",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"oauth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/logout",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "abc@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/verify",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth/facebook",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/auth/facebook",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"auth",
+								"facebook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth/google",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/auth/google",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"auth",
+								"google"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot/password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile",
+									"value": "7388505981",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/forgot/password",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"forgot",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset/password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/reset/password",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"reset",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh/token",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/refresh/token",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"refresh",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-location",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/update-location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"update-location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-location",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/get-location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"get-location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove-location",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/remove-location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"remove-location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addmoney",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "21",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/addmoney",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"addmoney"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment-log",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/payment-log",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"payment-log"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "direction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "s_latitude",
+									"value": "34",
+									"type": "text"
+								},
+								{
+									"key": "s_longitude",
+									"value": "434",
+									"type": "text"
+								},
+								{
+									"key": "d_longitude",
+									"value": "23",
+									"type": "text"
+								},
+								{
+									"key": "d_latitude",
+									"value": "32",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/direction",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"direction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "braintree/token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/braintree/token",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"braintree",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payu/response",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/payu/response",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"payu",
+								"response"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payu/failure",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/payu/failure",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"payu",
+								"failure"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment/success",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/payment/success",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"payment",
+								"success"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "payment/failure",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/providers/payment/failure",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"providers",
+								"payment",
+								"failure"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/providers/update/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"providers",
+								"update",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "ab",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/profile/password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/password",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile/location",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/location",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile/language",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/language",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"language"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile/available",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "service_status",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/available",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"available"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile/documents",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/documents",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "documents/store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "document",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/documents/store",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"documents",
+								"store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile/details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/profile/details",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"profile",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "providercard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/providercard",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"providercard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "chat",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/chat",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"chat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "target",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/target",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"target"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "11|aFNDSORMWyMedfjeR28yPtMBhKTKbFuQP8pJsaCz",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/trip",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"trip"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "cancel_reason",
+									"value": "abc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/cancel",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "summary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/summary",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"summary"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "help",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/help",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"help"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wallettransaction",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/wallettransaction",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"wallettransaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wallettransaction/details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/wallettransaction/details",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"wallettransaction",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transferlist",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/transferlist",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"transferlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requestamount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requestamount",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requestamount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requestcancel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requestcancel",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requestcancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "waiting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/waiting",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"waiting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requests/rides",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requests/rides",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requests",
+								"rides"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "instant/ride",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requests/instant/ride",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requests",
+								"instant",
+								"ride"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requests/upcoming",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requests/upcoming",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requests",
+								"upcoming"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requests/history",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requests/history",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requests",
+								"history"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requests/history/details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requests/history/details",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requests",
+								"history",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requests/upcoming/details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/requests/upcoming/details",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"requests",
+								"upcoming",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test/push",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/test/push",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"test",
+								"push"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reasons",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/reasons",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"reasons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dispute-list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dispute_type",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/dispute-list",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"dispute-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dispute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "dispute_type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "dispute_name",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/dispute",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"dispute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "drop-item",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6|t2x6g5GPx0wzmLA3UHw4Iz5HapAoaCgTqlR5d59f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://olyox.balajiludo.com/api/provider/drop-item",
+							"protocol": "https",
+							"host": [
+								"olyox",
+								"balajiludo",
+								"com"
+							],
+							"path": [
+								"api",
+								"provider",
+								"drop-item"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Banner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://olyox.balajiludo.com/api/user/banner",
+					"protocol": "https",
+					"host": [
+						"olyox",
+						"balajiludo",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"banner"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
